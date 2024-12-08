@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoGame - Ünlü Yapıları Bul</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+<h1>🌍 GeoGame - Ünlü Yapıları Bul!</h1>
+<p>Resme bak, yapının ismini yaz ve haritada nerede olduğunu bul!</p>
+
+<div id="main-container">
+  <!-- Sol taraf: Harita -->
+  <div id="map"></div>
+
+  <!-- Sağ taraf: Resim, input ve buton -->
+  <div id="game-container">
+    <img id="landmark-image" src="" alt="Ünlü Yapı" />
+    <input type="text" id="guess-input" placeholder="Yapının Adını Yazın..." />
+    <button id="submit-guess">Gönder</button>
+    <!-- Skor alanı -->
+    <div id="score-display">Skor: 0</div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
